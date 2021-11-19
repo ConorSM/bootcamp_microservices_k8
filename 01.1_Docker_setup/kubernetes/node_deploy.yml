@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: node
-          image: conor/node-app:v1
+          image: conorsm/node-app:v1
 
           ports:
             - containerPort: 3000

@@ -50,5 +50,9 @@ docker ps
 ```
 kubectl
 kubectl get service
-kubectl create -f name_of_yml_file
+kubectl create -f {name_of_yml_file}
+kubectl get deploy
+kubectl get pods
+kubectl delete pod {node-name}
+kubectl delete deploy {deploy_name}
 ```
