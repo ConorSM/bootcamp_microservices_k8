@@ -44,6 +44,7 @@ docker stop
 docker rm (add -f to force)
 docker ps
 docker login
+docker pull
 docker push {image name}
 ```
 
