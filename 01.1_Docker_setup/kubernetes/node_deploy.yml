@@ -24,6 +24,6 @@ spec:
             - containerPort: 3000
           #env:
            # - name: DB_HOST
-            # value: mongod://mongo:27017/posts
+            #  value: mongod://mongo:27017/posts
 
           imagePullPolicy: Always
