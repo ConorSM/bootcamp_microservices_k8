@@ -44,3 +44,11 @@ docker stop
 docker rm (add -f to force)
 docker ps
 ```
+
+## Kubernetes
+
+```
+kubectl
+kubectl get service
+kubectl create -f name_of_yml_file
+```
