@@ -92,3 +92,7 @@ kubectl get pods
 kubectl delete pod {node-name}
 kubectl delete deploy {deploy_name}
 ```
+
+## Mongo deployment
+
+![](images/mongo-deployment.png)
