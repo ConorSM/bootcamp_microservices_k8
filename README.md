@@ -43,6 +43,7 @@ docker run
 docker stop
 docker rm (add -f to force)
 docker ps
+docker push {image name}
 ```
 
 ## Kubernetes
