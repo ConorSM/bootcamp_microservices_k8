@@ -37,7 +37,7 @@ CMD ["node", "app.js"]
 ```
  docker run -d -p 80:3000 conorsm/node-app:v1
 ```
-## Useful docker commands
+### Useful Docker Commands
 ```
 docker run
 docker stop
@@ -47,6 +47,39 @@ docker ps
 
 ## Kubernetes
 
+- Create `node_deploy.yml`
+```
+apiVersion: apps/v1
+
+kind: Deployment # pod, service # replicaset #ASG
+
+
+metadata:
+  name: node
+spec:
+  selector:
+    matchLabels:
+      app: node
+  replicas: 3 # how many pods we want
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+        - name: node
+          image: conorsm/node-app:v1
+
+          ports:
+            - containerPort: 3000
+          #env:
+           # - name: DB_HOST
+            # value: mongod://mongo:27017/posts
+
+          imagePullPolicy: Always
+```
+
+### Kubernetes Commands
 ```
 kubectl
 kubectl get service

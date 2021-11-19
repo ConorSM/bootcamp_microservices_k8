@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       app: node
-  replicas: 3
+  replicas: 3 # how many pods we want
   template:
     metadata:
       labels:
