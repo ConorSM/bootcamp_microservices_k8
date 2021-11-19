@@ -41,6 +41,6 @@ CMD ["node", "app.js"]
 ```
 docker run
 docker stop
-docker rm
+docker rm (add -f to force)
 docker ps
 ```

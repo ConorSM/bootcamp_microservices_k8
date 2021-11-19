@@ -1,0 +1,29 @@
+
+apiVersion: apps/v1
+
+kind: Deployment # pod, service # replicaset #ASG
+
+
+metadata:
+  name: node
+spec:
+  selector:
+    matchLabels:
+      app: node
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+        - name: node
+          image: conor/node-app:v1
+
+          ports:
+            - containerPort: 3000
+          #env:
+           # - name: DB_HOST
+            # value: mongod://mongo:27017/posts
+
+          imagePullPolicy: Always
