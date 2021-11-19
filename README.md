@@ -9,7 +9,7 @@ docker images
 ```
 ## Build app on docker
 
-- Build Dockerfile
+- Build Dockerfile in app directory
 ```
 # node as our base image
 FROM node
